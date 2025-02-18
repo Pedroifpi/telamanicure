@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Nails - Manicure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Pretty Nails</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/711/711769.png" alt="Perfil"></a>
+        </div>
+    </header>
+    <main>
+        <section class="manicure-info">
+<div class="profile-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/711/711769.png" alt="Foto de Perfil" class="profile-pic">
+    <h2 class="profile-name">Nome do Profissional</h2>
+</div>
+            </div>
+            <div class="info-card">
+                <h2>Serviços de Manicure</h2>
+                <ul>
+                    <li>Manicure e Pedicure</li>
+                    <li>Atendimento Domiciliar</li>
+                    <li>Tratamento de Unhas e Pés</li>
+                </ul>
+                <p class="location">Picos-PI: Perímetro Urbano</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+            </div>
+        </section>
+        <section class="scheduling">
+            <h3>Adicione um horário disponível</h3>
+            <label for="diaSemana">Dia:</label>
+            <select id="diaSemana">
+                <option value="Segunda">Segunda</option>
+                <option value="Terça">Terça</option>
+                <option value="Quarta">Quarta</option>
+                <option value="Quinta">Quinta</option>
+                <option value="Sexta">Sexta</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <label for="novoHorario">Horário:</label>
+            <input type="text" id="novoHorario" placeholder="Ex: 14:00 - 15:00">
+            <button onclick="adicionarHorario()">Adicionar</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Selecionar</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="horariosTabela"></tbody>
+            </table>
+            <button class="continue-btn" onclick="salvarHorarios()">Salvar</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Pretty Nails. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
