@@ -116,3 +116,13 @@ header .icons img {
 .button:active {
     transform: scale(0.95);
 }
+
+/* Ajuste do footer */
+footer {
+    margin-top: auto; /* Garante que o footer fique na parte inferior da tela */
+    background-color: var(--tom1);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
