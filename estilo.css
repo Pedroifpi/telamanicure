@@ -20,20 +20,22 @@
 
 body {
     background-color: var(--tom7);
-    padding: 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Ajuste do header para ocupar toda a largura */
 header {
+    width: 100vw; /* Faz o header ocupar toda a largura da tela */
+    max-width: 100%; /* Garante que não ultrapasse a tela */
     background-color: var(--tom1);
     color: var(--branco);
-    padding: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 0 ; 
 }
 
 header .logo {
@@ -50,7 +52,7 @@ header nav ul {
 header nav ul li a {
     color: var(--branco);
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 header .icons img {
@@ -140,6 +142,7 @@ footer {
     padding: 15px;
     border-radius: 8px;
 }
+
 /* Responsividade para telas pequenas (celulares pequenos) */
 @media (max-width: 360px) {
     .button {
@@ -235,4 +238,4 @@ footer {
     header nav ul {
         gap: 25px;
     }
-}
+        }
